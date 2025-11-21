@@ -194,44 +194,49 @@ textarea:focus {
     .stars {
         font-size: 26px;
     }
-   /* BLOCO IDENTIFICAÇÃO */
-.identificacao-bloco {
-    background: #17355e;
-    padding: 18px 20px;
-    border-radius: 12px;
-    margin-bottom: 25px;
-    border: 1px solid #1f3f6e;
+  /* WRAPPER CENTRALIZADO DO BLOCO */
+.identificacao-wrapper {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;         /* centraliza horizontalmente */
+    margin-bottom: 25px;
 }
 
+/* TÍTULO */
 .identificacao-label {
-    font-size: 18px;
+    width: 100%;
+    max-width: 500px;            /* mesmo tamanho visual */
     color: #cfe1ff;
+    font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
-    display: block;
 }
 
+/* CAIXA DE TEXTO PADRÃO BORA */
 .input-identificacao {
     width: 100%;
-    background: #0e203c;
-    border: 1px solid #274a82;
+    max-width: 500px;            /* para centralizar com largura fixa */
+    background: #17355e;         /* mesmo azul das caixas */
+    border: 1px solid #1f3f6e;
     color: #ffffff;
-    padding: 12px;
-    font-size: 15px;
-    border-radius: 8px;
-    margin-top: 8px;
+    padding: 12px 14px;
+    font-size: 16px;
+    border-radius: 10px;
     transition: 0.25s;
 }
 
+/* Placeholder no tom claro */
 .input-identificacao::placeholder {
     color: #b5c8e9;
 }
 
+/* Efeito de foco igual às outras caixas */
 .input-identificacao:focus {
     border-color: #2a66ff;
     outline: none;
-    box-shadow: 0 0 4px rgba(42,102,255,0.6);
+    box-shadow: 0 0 6px rgba(42,102,255,0.6);
 }
+
 
 }
