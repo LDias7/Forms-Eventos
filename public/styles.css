@@ -194,7 +194,25 @@ textarea:focus {
     .stars {
         font-size: 26px;
     }
-   .input-texto {
+   /* BLOCO IDENTIFICAÇÃO */
+.identificacao-bloco {
+    background: #17355e;
+    padding: 18px 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #1f3f6e;
+    width: 100%;
+}
+
+.identificacao-label {
+    font-size: 18px;
+    color: #cfe1ff;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.input-identificacao {
     width: 100%;
     background: #0e203c;
     border: 1px solid #274a82;
@@ -202,14 +220,18 @@ textarea:focus {
     padding: 12px;
     font-size: 15px;
     border-radius: 8px;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 8px;
     transition: 0.25s;
 }
 
-.input-texto:focus {
+.input-identificacao::placeholder {
+    color: #b5c8e9;
+}
+
+.input-identificacao:focus {
     border-color: #2a66ff;
     outline: none;
     box-shadow: 0 0 4px rgba(42,102,255,0.6);
 }
+
 }
