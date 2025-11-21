@@ -194,4 +194,22 @@ textarea:focus {
     .stars {
         font-size: 26px;
     }
+   .input-texto {
+    width: 100%;
+    background: #0e203c;
+    border: 1px solid #274a82;
+    color: #ffffff;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    transition: 0.25s;
+}
+
+.input-texto:focus {
+    border-color: #2a66ff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(42,102,255,0.6);
+}
 }
