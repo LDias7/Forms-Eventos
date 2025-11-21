@@ -194,49 +194,54 @@ textarea:focus {
     .stars {
         font-size: 26px;
     }
-  /* WRAPPER CENTRALIZADO DO BLOCO */
+  /* CENTRALIZAÇÃO */
 .identificacao-wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;         /* centraliza horizontalmente */
-    margin-bottom: 25px;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
-/* TÍTULO */
+/* LABEL */
 .identificacao-label {
     width: 100%;
-    max-width: 500px;            /* mesmo tamanho visual */
-    color: #cfe1ff;
+    max-width: 480px;
+    color: #dbe7ff;
     font-size: 18px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
-/* CAIXA DE TEXTO PADRÃO BORA */
-.input-identificacao {
+/* INPUT ESTILO MODERNO */
+.input-moderno {
     width: 100%;
-    max-width: 500px;            /* para centralizar com largura fixa */
-    background: #17355e;         /* mesmo azul das caixas */
-    border: 1px solid #1f3f6e;
+    max-width: 480px;
+
+    background: rgba(14, 22, 40, 0.7);        /* dark glass */
+    border: 1px solid rgba(70, 90, 130, 0.4); /* borda discreta */
+    backdrop-filter: blur(8px);               /* efeito glass */
+
     color: #ffffff;
-    padding: 12px 14px;
+    padding: 14px 18px;
     font-size: 16px;
     border-radius: 10px;
-    transition: 0.25s;
+
+    transition: 0.25s ease;
 }
 
-/* Placeholder no tom claro */
-.input-identificacao::placeholder {
-    color: #b5c8e9;
+/* Placeholder suave */
+.input-moderno::placeholder {
+    color: #9ba8c7;
 }
 
-/* Efeito de foco igual às outras caixas */
-.input-identificacao:focus {
-    border-color: #2a66ff;
+/* EFEITO DE FOCO */
+.input-moderno:focus {
+    border-color: #3e6bff;
+    box-shadow: 0 0 12px rgba(62, 107, 255, 0.25);
     outline: none;
-    box-shadow: 0 0 6px rgba(42,102,255,0.6);
 }
+
 
 
 }
