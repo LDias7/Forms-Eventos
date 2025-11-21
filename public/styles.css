@@ -1,0 +1,197 @@
+/* ===========================================
+   ESTILO GERAL DO FORMULÁRIO
+   Padrão Bora Transportes – Azul escuro
+   =========================================== */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0b1e39;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #12294d;
+    border-radius: 14px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.35);
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.descricao {
+    text-align: center;
+    font-size: 15px;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+/* ===========================================
+   PERGUNTAS (TÍTULOS)
+   =========================================== */
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 18px;
+    font-size: 22px;
+    color: #f3f3f3;
+    border-left: 5px solid #2a66ff;
+    padding-left: 10px;
+}
+
+/* ===========================================
+   BLOCO DE EVENTO
+   =========================================== */
+
+.evento-bloco {
+    background: #17355e;
+    padding: 15px 18px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #1f3f6e;
+    transition: 0.25s;
+}
+
+.evento-bloco:hover {
+    background: #1a3e73;
+    transform: translateY(-2px);
+}
+
+.evento-nome {
+    margin: 0;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #cfe1ff;
+}
+
+/* ===========================================
+   ESTRELAS
+   =========================================== */
+
+.stars {
+    font-size: 28px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.stars span {
+    display: inline-block;
+    color: #4a6fa3;
+    transition: 0.2s;
+}
+
+.stars span.selected,
+.stars span.active {
+    color: #ffd200;
+    transform: scale(1.15);
+}
+
+.stars span:hover {
+    color: #ffea80;
+    transform: scale(1.25);
+}
+
+/* ===========================================
+   TEXTAREAS (MOTIVO)
+   =========================================== */
+
+textarea {
+    width: 100%;
+    background: #0e203c;
+    border: 1px solid #274a82;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    resize: vertical;
+    margin-top: 10px;
+    line-height: 1.5;
+    transition: 0.25s;
+}
+
+textarea:focus {
+    border-color: #2a66ff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(42,102,255,0.6);
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* ===========================================
+   OPÇÕES SIM / NÃO
+   =========================================== */
+
+.simnao-opcoes {
+    display: flex;
+    gap: 20px;
+    margin-top: 8px;
+}
+
+.simnao-opcoes label {
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* ===========================================
+   BOTÃO ENVIAR
+   =========================================== */
+
+.btn-enviar {
+    width: 100%;
+    padding: 14px 0;
+    margin-top: 30px;
+    background: #2a66ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.btn-enviar:hover {
+    background: #1b4cd1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+}
+
+/* ===========================================
+   RESPONSIVIDADE
+   =========================================== */
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .evento-bloco {
+        padding: 12px;
+    }
+
+    .stars {
+        font-size: 26px;
+    }
+}
