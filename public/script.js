@@ -171,6 +171,10 @@ document.getElementById("npsForm").addEventListener("submit", async function (e)
     const timestamp = new Date().toLocaleString("pt-BR");
     dados.timestamp = timestamp;
 
+   // Capturar nome + setor
+dados.nome_setor = document.getElementById("nome_setor").value.trim();
+
+
     /* ===== Capturar ESTRELAS ===== */
     document.querySelectorAll(".grupo-pergunta").forEach(grupo => {
         const chave = grupo.dataset.key;
