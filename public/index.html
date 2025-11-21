@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PESQUISA DE EVENTOS - BORA TRANSPORTES</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>PESQUISA DE EVENTOS – BORA TRANSPORTES</h1>
+        <p class="descricao">Avalie cada evento abaixo com sinceridade. Sua resposta é essencial para melhorar nossos eventos internos.</p>
+
+        <form id="npsForm">
+
+            <!-- ============================
+                 BLOCO MODELO PARA ESTRELAS
+                 ============================ -->
+            <template id="evento-template">
+                <div class="evento-bloco">
+                    <h3 class="evento-nome"></h3>
+
+                    <div class="stars" data-target="">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5">★</span>
+                    </div>
+
+                    <textarea class="motivo hidden" placeholder="Explique o motivo da nota (obrigatório para 1, 2 ou 3 estrelas)"></textarea>
+                </div>
+            </template>
+
+            <!-- ============================
+                 BLOCO MODELO PARA SIM/NÃO
+                 ============================ -->
+            <template id="simnao-template">
+                <div class="evento-bloco">
+                    <h3 class="evento-nome"></h3>
+
+                    <div class="simnao-opcoes">
+                        <label><input type="radio" value="Sim"> Sim</label>
+                        <label><input type="radio" value="Não"> Não</label>
+                    </div>
+
+                    <textarea class="motivo-simnao hidden" placeholder="Explique o motivo (obrigatório se marcar 'Não')"></textarea>
+                </div>
+            </template>
+
+            <!-- ============================
+                 1. SATISFAÇÃO GERAL
+                 ============================ -->
+            <h2>1. Satisfação geral com o evento</h2>
+            <div class="grupo-pergunta" data-key="satisfacao"></div>
+
+            <!-- ============================
+                 2. HORÁRIO E DATA
+                 ============================ -->
+            <h2>2. Horário e data foram convenientes?</h2>
+            <div class="grupo-pergunta" data-key="horario"></div>
+
+            <!-- ============================
+                 3. COMIDA E BEBIDA
+                 ============================ -->
+            <h2>3. Qualidade da comida e bebida</h2>
+            <div class="grupo-pergunta" data-key="comida"></div>
+
+            <!-- ============================
+                 4. INFORMAÇÕES CLARAS (SIM/NÃO)
+                 ============================ -->
+            <h2>4. As informações foram comunicadas claramente?</h2>
+            <div class="grupo-simnao" data-key="info"></div>
+
+            <!-- ============================
+                 5. ATIVIDADES / ATRAÇÕES
+                 ============================ -->
+            <h2>5. Avaliação das atividades/atrações</h2>
+            <div class="grupo-pergunta" data-key="atividades"></div>
+
+            <!-- ============================
+                 6. PARTICIPARIA DE NOVO?
+                 ============================ -->
+            <h2>6. Participaria de atividades semelhantes?</h2>
+            <div class="grupo-simnao" data-key="participaria"></div>
+
+            <!-- ============================
+                 7. INTERAÇÃO COM COLEGAS
+                 ============================ -->
+            <h2>7. Teve oportunidade de interagir com colegas?</h2>
+            <div class="grupo-simnao" data-key="interagiu"></div>
+
+            <!-- ============================
+                 8. PERTENCIMENTO
+                 ============================ -->
+            <h2>8. O evento contribuiu para seu sentimento de pertencimento?</h2>
+            <div class="grupo-simnao" data-key="pertencimento"></div>
+
+            <!-- ============================
+                 9. O QUE MAIS GOSTOU
+                 ============================ -->
+            <h2>9. O que você mais gostou em cada evento?</h2>
+            <div class="grupo-texto" data-key="gostou"></div>
+
+            <!-- ============================
+                 10. O QUE MELHORARIA
+                 ============================ -->
+            <h2>10. Se pudesse melhorar algo, o que seria?</h2>
+            <div class="grupo-texto" data-key="melhorias"></div>
+
+            <!-- ============================
+                 11. DECORAÇÃO
+                 ============================ -->
+            <h2>11. Avaliação da decoração</h2>
+            <div class="grupo-pergunta" data-key="decoracao"></div>
+
+            <!-- ============================
+                 12. SUGESTÕES GERAIS
+                 ============================ -->
+            <h2>12. Sugestões gerais</h2>
+            <textarea id="sugestoes_gerais" placeholder="Escreva aqui suas sugestões gerais"></textarea>
+
+            <!-- ============================
+                 BOTÃO ENVIAR
+                 ============================ -->
+            <button type="submit" class="btn-enviar">ENVIAR RESPOSTAS</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
